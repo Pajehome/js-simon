@@ -27,12 +27,19 @@ let removeNum = setTimeout(function () {
 random.innerHTML = '';
 }, 3000);
 
-let enter = []
+/*Inseriri i 5 numeri nel prompt */
+let enter = [];
+let x = 0;
 let timer = setTimeout(function () {
-   for(let x = 0; x < 5; x++){
+   for(x = 0; x < 5; x++){
     let c = parseInt(prompt('Inserisci i numeri visualizzati precedentemente'));
     enter.push(c);
-    console.log(i)
+    console.log(enter)
    }
 console.log(enter)
 },4000)
+
+/*il software dice quanti e quali dei numeri da indovinare sono stati individuati.*/
+ if(enter[x] === numRandom[i]){
+     console.log('presi')
+ }
