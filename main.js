@@ -35,11 +35,23 @@ let timer = setTimeout(function () {
     let c = parseInt(prompt('Inserisci i numeri visualizzati precedentemente'));
     enter.push(c);
     console.log(enter)
+    
    }
 console.log(enter)
 },4000)
 
 /*il software dice quanti e quali dei numeri da indovinare sono stati individuati.*/
- if(enter[x] === numRandom[i]){
-     console.log('presi')
- }
+
+
+for(let y = 0; y < enter.length; y++){
+    console.log(enter[y]);
+      for(let k = 0; k < numRandom.length; k++){
+         if(numRandom[i] === enter[x]){
+             console.log(enter[x])
+         }else if(numRandom[i] === enter[y]){
+
+
+         }
+      }
+    }
+ 
